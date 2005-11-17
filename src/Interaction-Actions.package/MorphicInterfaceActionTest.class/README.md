@@ -1,0 +1,1 @@
+These tests test the basic Morphic subclasses of HumanInterfaceAction.  The examples are copied from GenericActionTest.

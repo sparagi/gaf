@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "BEL 10/19/2005 12:52",
+	"super" : "MessageSend",
+	"category" : "Interaction-Actions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"label",
+		"description"
+	],
+	"name" : "GenericAction",
+	"type" : "normal"
+}

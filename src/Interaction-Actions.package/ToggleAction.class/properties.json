@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "BEL 10/19/2005 12:57",
+	"super" : "GenericAction",
+	"category" : "Interaction-Actions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"getStateSelector",
+		"getStateArguments"
+	],
+	"name" : "ToggleAction",
+	"type" : "normal"
+}

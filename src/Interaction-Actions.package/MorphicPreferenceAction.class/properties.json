@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "HumanInterfaceAction",
+	"category" : "Interaction-Actions-Morphic",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MorphicPreferenceAction",
+	"type" : "normal"
+}

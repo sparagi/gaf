@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "HumanInterfaceAction",
+	"category" : "Interaction-Actions-Morphic",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"icon",
+		"keystroke"
+	],
+	"name" : "MorphicMenuAction",
+	"type" : "normal"
+}

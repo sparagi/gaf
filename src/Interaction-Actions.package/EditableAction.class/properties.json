@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "BEL 10/19/2005 13:09",
+	"super" : "GenericAction",
+	"category" : "Interaction-Actions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"labelReceiver",
+		"getLabelSelector",
+		"setLabelSelector",
+		"labelArguments"
+	],
+	"name" : "EditableAction",
+	"type" : "normal"
+}

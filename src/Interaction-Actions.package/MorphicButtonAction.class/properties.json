@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "HumanInterfaceAction",
+	"category" : "Interaction-Actions-Morphic",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"icon"
+	],
+	"name" : "MorphicButtonAction",
+	"type" : "normal"
+}

@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "BEL 10/24/2005 00:52",
+	"super" : "TestCase",
+	"category" : "Interaction-Actions-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"clubName",
+		"rank",
+		"atWar"
+	],
+	"name" : "GenericActionTest",
+	"type" : "normal"
+}

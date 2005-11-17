@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "BEL 10/24/2005 00:53",
+	"super" : "GenericActionTest",
+	"category" : "Interaction-Actions-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MorphicInterfaceActionTest",
+	"type" : "normal"
+}
