@@ -2,6 +2,7 @@ interface
 control
 	"Answer a menu item for invoking me."
 	| result |
+	self halt.
 	result := (genericAction hasState
 				ifTrue: [UpdatingMenuItemMorph]
 				ifFalse: [MenuItemMorph]) new.
@@ -10,8 +11,8 @@ control
 	genericAction answersActions
 		ifTrue: [| actionsMenu | 
 			actionsMenu := self actionsMenu.
-			actionsMenu 
-				ifNil: [^nil]
+			actionsMenu
+				ifNil: [^ nil]
 				ifNotNil: [result subMenu: actionsMenu]]
 		ifFalse: [result target: genericAction;
 				 selector: #trigger;
