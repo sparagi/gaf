@@ -8,12 +8,14 @@ control
 	result contents: self label;
 		 setBalloonText: genericAction description.
 	genericAction answersActions
-		ifTrue: [
-			result subMenu: self actionsMenu]
-		ifFalse: [
-			result 
-				target: genericAction;
-		 		selector: #trigger].
+		ifTrue: [| actionsMenu | 
+			actionsMenu := self actionsMenu.
+			actionsMenu 
+				ifNil: [^nil]
+				ifNotNil: [result subMenu: actionsMenu]]
+		ifFalse: [result target: genericAction;
+				 selector: #trigger;
+				 arguments: #()].
 	genericAction hasState
 		ifTrue: [result wordingProvider: self wordingSelector: #label.
 			genericAction
