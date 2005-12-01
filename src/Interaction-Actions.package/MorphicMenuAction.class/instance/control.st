@@ -2,21 +2,16 @@ interface
 control
 	"Answer a menu item for invoking me."
 	| result |
-	self halt.
 	result := (genericAction hasState
 				ifTrue: [UpdatingMenuItemMorph]
 				ifFalse: [MenuItemMorph]) new.
 	result contents: self label;
 		 setBalloonText: genericAction description.
 	genericAction answersActions
-		ifTrue: [| actionsMenu | 
-			actionsMenu := self actionsMenu.
-			actionsMenu
-				ifNil: [^ nil]
-				ifNotNil: [result subMenu: actionsMenu]]
+		ifTrue: [result subMenu: self actionsMenu]
 		ifFalse: [result target: genericAction;
-				 selector: #trigger;
-				 arguments: #()].
+				selector: #trigger;
+				arguments: #()].
 	genericAction hasState
 		ifTrue: [result wordingProvider: self wordingSelector: #label.
 			genericAction
