@@ -7,7 +7,7 @@ control
 				ifTrue: [#state].
 	labelSelector := genericAction hasEditableLabel
 				ifTrue: [#label].
-	result := PluggableButtonMorph
+	result := PluggableButtonMorphPlus
 				on: genericAction
 				getState: stateSelector
 				action: #trigger
