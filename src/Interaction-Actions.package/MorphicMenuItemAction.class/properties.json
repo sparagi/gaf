@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "BEL 12/3/2006 16:30",
+	"commentStamp" : "BEL 12/3/2006 16:38",
 	"super" : "HumanInterfaceAction",
 	"category" : "Interaction-Actions-Morphic",
 	"classinstvars" : [ ],
@@ -9,6 +9,6 @@
 		"icon",
 		"keystroke"
 	],
-	"name" : "MorphicMenuAction",
+	"name" : "MorphicMenuItemAction",
 	"type" : "normal"
 }

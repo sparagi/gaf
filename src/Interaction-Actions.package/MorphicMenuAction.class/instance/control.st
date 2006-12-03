@@ -1,23 +1,12 @@
 interface
 control
-	"Answer a menu item for invoking me."
+	"Answer a menu with items for each of my genericAction's 
+	values. This will cause a lot of trouble if genericAction 
+	answersActions is false."
 	| result |
-	result := (genericAction hasState
-				ifTrue: [UpdatingMenuItemMorph]
-				ifFalse: [MenuItemMorph]) new.
-	result contents: self label;
-		 setBalloonText: genericAction description.
-	genericAction answersActions
-		ifTrue: [result subMenu: self actionsMenu]
-		ifFalse: [result target: genericAction;
-				selector: #trigger;
-				arguments: #()].
-	genericAction hasState
-		ifTrue: [result wordingProvider: self wordingSelector: #label.
-			genericAction
-				when: #state
-				send: #updateContents
-				to: result].
-	Preferences menuWithIcons & self icon notNil
-		ifTrue: [result icon: self icon].
+	result := MenuMorph new.
+	(MorphicMenuItemAction wrapAll: genericAction value)
+		do: [:interfaceAction | result addMorphBack: interfaceAction control].
+	result addBlankIconsIfNecessary: MenuIcons blankIcon.
+	result beSticky.
 	^ result

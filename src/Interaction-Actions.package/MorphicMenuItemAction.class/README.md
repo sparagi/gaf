@@ -1,13 +1,13 @@
-EditableAction
+MorphicMenuItemAction
 
-My instances represent messages whose label can be edited by a human.  Typically instances of me would be used for messages which are somehow proxy-like, e.g. my use in SpiralNotebook to change which section is visible.  In this case, labelReceiver is the object being proxied and receiver is the object which will manipulate a proxy for labelReceiver.
+Instances of me create & configure a menu item Morph as needed to allow a human to trigger a GenericAction.  I handle states and submenus (using MorphicMenuAction if my genericAction is actually a GenericActions).  I also have minimal support for icons & keystrokes, but the interface builder must manually configure them.   Subclassing me for application-specific icon & keystroke support is recommended. 
+
+In the future it would be nice not to have to build all the submenus that will probably not be used.
 
 Instance variables:
 
-labelReceiver			an Object which will receive label-related messages
-getLabelSelector		a Symbol containing the name of a method which, when sent to my labelReceiver, will answer my label
-setLabelSelector		a Symbol containing the name of a method which, when sent to my labelReceiver, will set my label
-labelArguments		an Array of arguments for getLabelSelector and setLabelSelector; for setLabelSelector the new label will be added as an additional  argument at the end of the array
+icon		the small Icon to display on the left of the menu I create
+keystroke	the character a human could press to quickly navigate to the menu item I create
 
 
 Copyright (c) 2005-2006 Brenda Larcom <asparagi@hhhh.org>

@@ -1,8 +1,8 @@
 interface
-testToggleMenu
+testToggleMenuItem
 	| target interfaceAction interface |
 	target := self toggleAction.
-	interfaceAction := MorphicMenuAction wrap: target.
+	interfaceAction := MorphicMenuItemAction wrap: target.
 	interface := interfaceAction control.
 	self
 		shouldnt: [interfaceAction label = target label];

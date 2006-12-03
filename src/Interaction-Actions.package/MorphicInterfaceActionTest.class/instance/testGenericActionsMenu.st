@@ -7,8 +7,6 @@ testGenericActionsMenu
 	self
 		should: [interfaceAction label = target label];
 		
-		should: [target label = interface contents];
+		should: [interface defaultTarget = nil];
 		
-		should: [interface hasSubMenu];
-		
-		should: [target value size = interface subMenu items size]
+		should: [target value size = interface items size]
