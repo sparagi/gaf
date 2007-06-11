@@ -1,0 +1,1 @@
+My instances represent generic actions whose arguments are not pre-populated at the time of creation.  
