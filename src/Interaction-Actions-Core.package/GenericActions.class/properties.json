@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "BEL 12/3/2006 15:17",
+	"super" : "GenericAction",
+	"category" : "Interaction-Actions-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GenericActions",
+	"type" : "normal"
+}

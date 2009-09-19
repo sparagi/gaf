@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "BEL 12/3/2006 14:53",
+	"super" : "Object",
+	"category" : "Interaction-Actions-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"genericAction"
+	],
+	"name" : "HumanInterfaceAction",
+	"type" : "normal"
+}
